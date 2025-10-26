@@ -1,0 +1,67 @@
+.Boxmodelexplore {
+  width: 70%;
+  margin: 100px auto;
+  padding: 3rem;
+  background: linear-gradient(135deg, #ffe6f1, #ffd6e0);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: float 3.5s ease-in-out infinite;
+  width: 20%;
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.Boxmodelexplore:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(255, 105, 180, 0.3);
+}
+
+.Boxmodelexplore:hover .tag {
+  
+  transform: scale(1.05);
+}
+
+.Boxmodelexplore h3 {
+  font-size: 2rem;
+  color: #c2185b;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.Boxmodelexplore p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.Boxmodelexplore button {
+  background-color: #e91e63;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(233, 30, 99, 0.3);
+}
+
+.Boxmodelexplore button:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(233, 30, 99, 0.4);
+}

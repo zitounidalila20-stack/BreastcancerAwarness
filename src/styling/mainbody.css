@@ -1,3 +1,29 @@
 body{
     background-color: white;
 }
+.layoutofcards{
+    display: flex;
+    flex-direction: row;
+}
+#titleSupport {
+  color: #ff5ca8;
+  font-size: 2.5em;
+  margin-top: 5%;
+  text-align: center;
+  animation-name: titleanimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes titleanimation {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

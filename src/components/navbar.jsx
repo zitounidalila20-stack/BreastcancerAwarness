@@ -3,6 +3,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LanguageIcon from '@mui/icons-material/Language';
 import '../styling/main.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';  
 
 const navbarItems = ["About Breast Cancer", "Services", "Doctors", "About Us"];
 
@@ -10,10 +11,10 @@ export default function Navbar() {
   const [hoveredItem, setHoveredItem] = useState(null);
 
   const dropdownItems = [
-    "Facts & Statistics",
-    "Self-Exam Guide",
-    "FAQ & Myths",
-    "Doctors & Locations"
+    { name: "Facts & Statistics", path: "/facts" },
+    { name: "Self-Exam Guide", path: "/selfexam" },
+    { name: "FAQ & Myths", path: "/faq" },
+    { name: "Doctors & Locations", path: "/doctors" }
   ];
 
   return (
@@ -36,8 +37,10 @@ export default function Navbar() {
             {item === "Services" && hoveredItem === "Services" && (
               <ul className="dropdown">
                 {dropdownItems.map((drop) => (
-                  <li key={drop} className="dropdown-item">
-                    {drop}
+                  <li key={drop.name} className="dropdown-item">
+                    <Link to={drop.path} className="dropdown-link">
+                      {drop.name}
+                    </Link>
                   </li>
                 ))}
               </ul>

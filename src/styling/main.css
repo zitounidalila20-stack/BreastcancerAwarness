@@ -119,3 +119,12 @@
 .nav-center li:hover {
   color: #d63384;
 }
+.dropdown-link {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.dropdown-link:hover {
+  color: #ff5ca8;
+}

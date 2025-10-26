@@ -20,14 +20,6 @@
     animation-timeline: view(10%);
     
 }
-@keyframes textanimation {
-    from{
-       
-    }
-    to{
-        
-    }
-}
 
 @keyframes titleanimation {
     from{
