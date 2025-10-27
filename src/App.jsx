@@ -10,20 +10,19 @@ import SelfExam from './pages/selfexam.jsx';
 import Facts from './pages/facts.jsx';
 import FAQ from './pages/faq.jsx';
 import Doctors from './pages/doctors.jsx';
+import Aboutus from './pages/aboutus.jsx';
 
 export default function Main() {
   return (
     <div>
       <NavBar />
-
-      {/* Default (Home) Page Layout */}
       <Routes>
         <Route
           path="/"
           element={
             <>
               <MainDiv />
-              <Definitionmodel />
+              <Definitionmodel title={"Why October Rose?"} description={"Octobre Rose is more than just a campaign — it’s a movement of unity, awareness, and hope. Each October, the world turns pink to remind us of the power of early detection, research, and support for everyone affected by breast cancer."}/>
               <Model />
               <h2 id='titleSupport'>Support & Resources</h2>
               <section className='layoutofcards'>
@@ -45,11 +44,12 @@ export default function Main() {
           }
         />
 
-        {/* Other Routes */}
+  
         <Route path="/selfexam" element={<SelfExam />} />
         <Route path="/facts" element={<Facts />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/doctors" element={<Doctors />} />
+        <Route path="/aboutus" element={<Aboutus/>}/>
       </Routes>
     </div>
   );

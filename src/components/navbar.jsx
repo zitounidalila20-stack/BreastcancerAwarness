@@ -14,7 +14,8 @@ export default function Navbar() {
     { name: "Facts & Statistics", path: "/facts" },
     { name: "Self-Exam Guide", path: "/selfexam" },
     { name: "FAQ & Myths", path: "/faq" },
-    { name: "Doctors & Locations", path: "/doctors" }
+    { name: "Doctors & Locations", path: "/doctors" },
+    {name:"About Us",path: "/aboutus"}
   ];
 
   return (

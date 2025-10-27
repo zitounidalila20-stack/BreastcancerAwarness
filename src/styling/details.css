@@ -1,0 +1,65 @@
+
+.logo {
+  width: 15%;
+  top: 90px;
+  position: absolute;
+  display: inline;
+  margin: 20px auto;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+  100% {
+    transform: translateY(0px); 
+  }
+}
+
+.logo-glow {
+  animation: float 3s ease-in-out infinite alternate, glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4;
+  }
+  to {
+    box-shadow: 0 0 20px #ff69b4, 0 0 30px #ff69b4, 0 0 40px #ff69b4;
+  }
+}
+
+
+#socialmedia {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  margin-left: 45%;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #ff4f81, #ff69b4);
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+  animation: bounce 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  20%  { transform: translateY(-10px); }
+  40%  { transform: translateY(0); }
+  60%  { transform: translateY(-5px); }
+  80%  { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+#socialmedia:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
+}

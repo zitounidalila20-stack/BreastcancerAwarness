@@ -1,0 +1,45 @@
+.exam-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+}
+
+.exam-box h2 {
+    color: #d63384;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+.exam-box p {
+    color: #333;
+    font-size: 1.2em;
+    line-height: 2;
+    text-align: justify; 
+    animation: fadeInDown 1s ease-in-out;   
+}
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* حركة العنوان عند الظهور */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,15 +1,10 @@
 import "../styling/define.css";
 
-export default function Definitionmodel() {
+export default function Definitionmodel({title,description}) {
   return (
       <div className="box">
-        <h2>Why October Rose?</h2>
-        <p>
-          Octobre Rose is more than just a campaign — it’s a movement of unity, 
-          awareness, and hope. Each October, the world turns pink to remind us 
-          of the power of early detection, research, and support for everyone 
-          affected by breast cancer.
-        </p>
+        <h2>{title}</h2>
+        <p>{description}</p>
       </div>
   );
 }
