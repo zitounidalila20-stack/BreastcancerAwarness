@@ -7,8 +7,8 @@ import Footer from './components/footer.jsx';
 import './styling/mainbody.css';
 import { Routes, Route } from 'react-router-dom';
 import SelfExam from './pages/selfexam.jsx';
-import Facts from './pages/facts.jsx';
-import FAQ from './pages/faq.jsx';
+import Facts from './pages/FactsStats.jsx';
+import FAQ from './pages/FAQMyths.jsx';
 import Doctors from './pages/doctors.jsx';
 import Aboutus from './pages/aboutus.jsx';
 
